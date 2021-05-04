@@ -68,11 +68,13 @@ public class SpringMvcPortletMigratorTest {
 		UpgradeProblem upgradeProblem = upgradeProblems.get(0);
 
 		assertEquals(55, upgradeProblem.getStartOffset());
+
 		assertEquals(61, upgradeProblem.getEndOffset());
 
 		int corrected = springMvcPortletMigrator.correctProblems(testFile, upgradeProblems);
 
 		assertEquals(1, corrected);
+
 		assertTrue(contains(testPath, "Hello, World", false));
 	}
 

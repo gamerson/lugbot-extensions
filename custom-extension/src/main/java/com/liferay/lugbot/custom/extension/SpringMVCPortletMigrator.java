@@ -106,6 +106,7 @@ public class SpringMVCPortletMigrator extends AbstractFileMigrator<JavaFile> imp
 					QualifiedName qName = ast.newQualifiedName(ast.newSimpleName("System"), ast.newSimpleName("out"));
 
 					methodInvocation.setExpression(qName);
+
 					methodInvocation.setName(ast.newSimpleName("println"));
 
 					StringLiteral literal = ast.newStringLiteral();
@@ -118,9 +119,8 @@ public class SpringMVCPortletMigrator extends AbstractFileMigrator<JavaFile> imp
 
 					ASTRewrite rewriter = ASTRewrite.create(ast);
 
-					Block body = methodDeclaration[0].getBody();
-
-					ListRewrite lrw = rewriter.getListRewrite(body, Block.STATEMENTS_PROPERTY);
+					ListRewrite lrw = rewriter.getListRewrite(
+						methodDeclaration[0].getBody(), Block.STATEMENTS_PROPERTY);
 
 					lrw.insertLast(ast.newExpressionStatement(methodInvocation), null);
 
@@ -141,7 +141,7 @@ public class SpringMVCPortletMigrator extends AbstractFileMigrator<JavaFile> imp
 			}
 		}
 		catch (Exception e) {
-			throw new AutoFileMigratorException("Failure in correcting problems.", e);
+			throw new AutoFileMigratorException("Failure in correcting problems", e);
 		}
 
 		return problemsFixed;

@@ -37,11 +37,11 @@
 	<dependencies>
 		<dependency>
 			<groupId>com.liferay.lugbot</groupId>
-			<artifactId>com.liferay.lugbot.api</artifactId>
+			<artifactId>com.liferay.code.upgrade.providers</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>com.liferay.lugbot</groupId>
-			<artifactId>com.liferay.code.upgrade.providers</artifactId>
+			<artifactId>com.liferay.lugbot.api</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.servicemix.bundles</groupId>
