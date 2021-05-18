@@ -15,7 +15,7 @@
 
 	<properties>
 		<bnd.version>5.3.0</bnd.version>
-		<java.build.version>1.8</java.build.version>
+		<java.build.version>11</java.build.version>
 		<maven.compiler.source>${java.build.version}</maven.compiler.source>
 		<maven.compiler.target>${java.build.version}</maven.compiler.target>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -44,12 +44,12 @@
 		</repository>
 		<repository>
 			<id>org.eclipse.p2.repo.orbit</id>
-			<url>https://download.eclipse.org/tools/orbit/downloads/drops2/I20210306035740/repository/</url>
+			<url>https://download.eclipse.org/tools/orbit/downloads/drops2/I20210308171815/repository/</url>
 			<layout>p2</layout>
 		</repository>
 		<repository>
 			<id>org.eclipse.p2.repo.releases</id>
-			<url>https://download.eclipse.org/releases/2020-09/202009161000/</url>
+			<url>https://download.eclipse.org/releases/2021-03/202103171000/</url>
 			<layout>p2</layout>
 		</repository>
 	</repositories>
