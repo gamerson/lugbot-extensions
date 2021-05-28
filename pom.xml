@@ -37,7 +37,7 @@
 	<repositories>
 		<repository>
 			<id>xanaduSnapshots</id>
-			<url>https://repository-cdn.liferay.com/nexus/content/repositories/xanadu-snapshots/</url>
+			<url>https://repository.liferay.com/nexus/content/repositories/xanadu-snapshots/</url>
 			<snapshots>
 				<enabled>true</enabled>
 			</snapshots>
@@ -58,7 +58,7 @@
 		<snapshotRepository>
 			<id>xanaduSnapshots</id>
 			<name>xanaduSnapshots</name>
-			<url>https://repository-cdn.liferay.com/nexus/content/repositories/xanadu-snapshots/</url>
+			<url>https://repository.liferay.com/nexus/content/repositories/xanadu-snapshots/</url>
 		</snapshotRepository>
 	</distributionManagement>
 
